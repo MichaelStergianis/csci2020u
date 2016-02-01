@@ -1,2 +1,58 @@
 apply plugin: 'java'
 
+sourceCompatibility = 1.7
+version = '1.0.1'
+
+/*
+buildscript {
+	repositories {
+		flatdir dirs: '/home/Doc'
+	}
+}
+*/
+
+repositories{
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'commons-validator',	
+					name: 'commons-validator', 
+					version: '1.5.0'
+}
+
+jar {
+	manifest{
+		attributes 'Main-Class': 'gradleDemo.GradleDemo',
+							 'Implementation-Title': 'Gradle Demo v1.0.1',
+							 'Implementation-Version': version
+	}
+}
+
+task(sayHello) {
+	doFirst{
+		println 'doFirst'
+	}
+	doLast{
+		println 'doLast'
+	}
+}
+task(howAreYou, dependsOn: 'sayHello') {
+	doLast {
+		println 'How ya doin?'
+	}
+}
+
+task(run, dependsOn: 'classes', type: JavaExec) {
+	main = 'gradleDemo.GradleDemo'
+	classpath = sourceSets.main.runtimeClasspath
+}
+
+/*
+task(minify, dependsOn: 'jar', type: proguard.gradle.ProGuardTask) {
+	configuration 'proguard.cfg'
+
+	injars 'build/libs/activity03a-1.0.1.jar'
+	outjars 'build/libs/activity03a-1.0.1.min.jar'
+}
+*/
