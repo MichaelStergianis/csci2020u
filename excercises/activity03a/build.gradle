@@ -49,11 +49,9 @@ task(run, dependsOn: 'classes', type: JavaExec) {
 	classpath = sourceSets.main.runtimeClasspath
 }
 
-/*
 task(minify, dependsOn: 'jar', type: proguard.gradle.ProGuardTask) {
 	configuration 'proguard.cfg'
 
 	injars 'build/libs/activity03a-1.0.1.jar'
 	outjars 'build/libs/activity03a-1.0.1.min.jar'
 }
-*/
