@@ -49,6 +49,8 @@ public class Registrar extends Application {
         final TextField emailField = new TextField();
         emailField.setPromptText("linus.torvalds@linux.org");
         grid.add(emailField, 1, 3);
+        final Label emailError = new Label();
+        grid.add(emailError, 2, 3);
 
         Label phoneLabel = new Label("Phone #:");
         grid.add(phoneLabel, 0, 4);
@@ -69,7 +71,13 @@ public class Registrar extends Application {
                 System.out.println(unameField.getText());
                 System.out.println(passField.getText());
                 System.out.println(fnameField.getText());
-                System.out.println(emailField.getText());
+                EmailValidator emailValidator = EmailValidator.getInstance();
+                if (emailValidator.isValid(emailField.getText())) {
+                    emailError.setText(null);
+                    System.out.println(emailField.getText());
+                } else {
+                    emailError.setText("Invalid E-Mail Address");
+                }
                 System.out.println(phoneField.getText());
                 System.out.println(datePicker.getValue());
 
