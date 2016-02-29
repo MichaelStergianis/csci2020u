@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: gradleDemo.GradleDemo
+Implementation-Title: Gradle Demo v1.0.1
+Implementation-Version: 1.0.1
+
