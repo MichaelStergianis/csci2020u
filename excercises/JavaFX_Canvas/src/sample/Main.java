@@ -1,5 +1,6 @@
 package sample;
 
+import com.sun.corba.se.impl.orbutil.graph.Graph;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -28,23 +29,22 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Group root = new Group();
-        Scene scene = new Scene(root, 800, 600, Color.LIGHTGRAY);
 
-        canvas = new Canvas();
-        canvas.widthProperty().bind(primaryStage.widthProperty());
-        canvas.heightProperty().bind(primaryStage.heightProperty());
-
+        canvas = new Canvas(800, 600);
+        GraphicsContext gc = canvas.getGraphicsContext2D();
+        draw(gc);
         root.getChildren().add(canvas);
+
+        Scene scene = new Scene(root, 800, 600, Color.LIGHTGRAY);
         primaryStage.setScene(scene);
         primaryStage.show();
-
-        draw(root);
-
         drawAnimation(root);
+
+//        canvas.widthProperty().bind(primaryStage.widthProperty());
+//        canvas.heightProperty().bind(primaryStage.heightProperty());
     }
 
-    private void draw(Group group) {
-        GraphicsContext gc = canvas.getGraphicsContext2D();
+    private void draw(GraphicsContext gc) {
         System.out.println("width: " + canvas.getWidth());
         System.out.println("height: " + canvas.getHeight());
         gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
