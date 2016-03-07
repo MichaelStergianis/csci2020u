@@ -11,6 +11,7 @@ import java.net.Socket;
 
 public final class WebServer {
 	private ServerSocket serverSocket = null;
+	private Socket clientSocket;
 
 	public WebServer(int port) {
 		try {
@@ -24,7 +25,7 @@ public final class WebServer {
 		System.out.println("WebServer 1.0 Listening");
 		while (true) {
 			try {
-				Socket clientSocket = serverSocket.accept();
+				clientSocket = serverSocket.accept();
 				BufferedReader in = new BufferedReader(
 						new InputStreamReader(clientSocket.getInputStream())
 				);
@@ -32,7 +33,10 @@ public final class WebServer {
 
 				String line = null;
 				while ((line = in.readLine()) != null) {
-					System.out.println(">> " + line);
+					String[] httpParts = line.split(" ");
+					System.out.println("Filename: " + httpParts[1]);
+					break;
+					// System.out.println(">> " + line);
 				}
 
 				in.close();
@@ -43,5 +47,10 @@ public final class WebServer {
 			}
 
 		}
+	}
+
+	public static void main(String[] args){
+		WebServer webServer = new WebServer(80);
+		webServer.handleRequests();
 	}
 }
