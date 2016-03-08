@@ -1,5 +1,6 @@
 package Spam;
 
+import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -9,9 +10,11 @@ import java.util.TreeMap;
  */
 public class WordBag {
     private Map<String, Integer> map;
+    private double numFiles;
 
     WordBag(){
         map = new TreeMap<>();
+        numFiles = 0;
     }
 
     public void incrementWord(String word){
@@ -22,7 +25,21 @@ public class WordBag {
         }
     }
     public Integer getWord(String word){
-        return map.get(word);
+        if (map.containsKey(word)) return map.get(word);
+        else return (new Integer(0));
+    }
+
+    public Iterator<String> getBagIter(){
+        return (map.keySet().iterator());
+    }
+    public boolean hasWord(String word){
+        return map.containsKey(word);
+    }
+    public void incrementFiles() {
+        numFiles += 1;
+    }
+    public double getNumFiles(){
+        return numFiles;
     }
 
 }
