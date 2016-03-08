@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class Main extends Application {
 
@@ -14,12 +15,22 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         File spamDir = new File("/home/michael/Documents/school/csci2020u/assignments/assignment01/out/production/assignment01/data/train/spam");
         File hamDir = new File("/home/michael/Documents/school/csci2020u/assignments/assignment01/out/production/assignment01/data/train/ham");
-        File h = new File("ham", "w");
+        File spamTest = new File("/home/michael/Documents/school/csci2020u/assignments/assignment01/out/production/assignment01/data/test/spam");
+        File hamTest = new File("/home/michael/Documents/school/csci2020u/assignments/assignment01/out/production/assignment01/data/test/ham");
 
+        // create and train the filter
         Filter f = new Filter();
         f.trainSpam(spamDir);
         f.trainHam(hamDir);
-        System.out.println(f.probSpam("nigeria"));
+
+
+
+        ArrayList<TestFile> fileList = new ArrayList<>();
+        // test the filter, placing the results into a list
+        f.test(spamTest, fileList);
+        f.test(hamTest, fileList);
+
+        // Load the fileList into a table to show results
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");

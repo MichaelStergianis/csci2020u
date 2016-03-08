@@ -2,9 +2,7 @@ package Spam;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * Filter
@@ -132,13 +130,13 @@ public class Filter {
         return (Math.log( (1 - spPr) / (spPr) ));
     }
 
-    public double test(File file) {
+    public double test(File file, List<TestFile> fileList) {
         try {
             if (file.isDirectory()) {
                 // process every file in directory
                 File[] filesInDir = file.listFiles();
                 for (int i = 0; i < filesInDir.length; i++) {
-                    test(filesInDir[i]);
+                    test(filesInDir[i], fileList);
                 }
             } else if (file.exists()) {
                 // load all of the data, and process it into words
@@ -150,6 +148,18 @@ public class Filter {
                         eehta += eehta(word);
                     }
                 }
+                // calculate probability that file is spam
+                double prSF = (1 / (1 + Math.pow(Math.E, eehta)));
+                String parentName;
+                if (file.getParentFile().getName().equalsIgnoreCase("ham")){
+                    parentName = "Ham";
+                } else if (file.getParentFile().getName().equalsIgnoreCase("spam")){
+                    parentName = "Spam";
+                } else {
+                    parentName = "void";
+                    System.out.println("Error occured, directory improperly set");
+                }
+                fileList.add(new TestFile(file.getName(), prSF, parentName));
                 scan.close();
             }
         } catch (IOException e){
