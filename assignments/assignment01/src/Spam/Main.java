@@ -57,7 +57,7 @@ public class Main extends Application {
         // Table columns
         TableColumn<TestFile,String> fileColumn;
         fileColumn = new TableColumn<>("File");
-        fileColumn.setMinWidth(300);
+        fileColumn.setMinWidth(350);
         fileColumn.setCellValueFactory(new PropertyValueFactory<>("Filename"));
 
         TableColumn<TestFile,String> classColumn;
@@ -68,7 +68,7 @@ public class Main extends Application {
         TableColumn<TestFile,String> spamColumn;
         spamColumn = new TableColumn<>("Spam Probability");
         spamColumn.setMinWidth(300);
-        spamColumn.setCellValueFactory(new PropertyValueFactory<>("SpamProbability"));
+        spamColumn.setCellValueFactory(new PropertyValueFactory<>("SpamProbRounded"));
 
         // Table Columns
         table.getColumns().add(fileColumn);

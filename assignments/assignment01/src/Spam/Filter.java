@@ -33,13 +33,16 @@ public class Filter {
             }
         } else if (file.exists()) {
             // load all of the data, and process it into words
+            // use another tree map to count if the word alread exists
+            // this will prevent multiple counts of a word from the same file
+            TreeMap<String, Integer> fileMap = new TreeMap<>();
             bag.incrementFiles();
             Scanner scan = new Scanner(file);
             while (scan.hasNext()){
                 String word = scan.next().toLowerCase();
-                if (isWord(word)) {
+                if (isWord(word) && !fileMap.containsKey(word)) {
+                    fileMap.put(word, 1);
                     bag.incrementWord(word);
-
                 }
             }
             scan.close();
@@ -50,6 +53,7 @@ public class Filter {
         probChange = true;
         try {
             _train(file, spamBag);
+            System.gc();
         } catch (IOException e){
             e.printStackTrace();
         }
@@ -57,7 +61,10 @@ public class Filter {
     public void trainHam(File file){
         probChange = true;
         try {
+            // Training will create a lot of objects, if the garbage
+            // collector does not automatically run, we want to run it
             _train(file, hamBag);
+            System.gc();
         } catch (IOException e){
             e.printStackTrace();
         }
@@ -74,9 +81,10 @@ public class Filter {
     private void genSpamProb(){
         if (!probChange) return;
         String curr;
-        double spPr = 0;
-        // spam and ham may not have the same
-        // keyspace, so we need to iterate over both spaces
+        double spPr;
+        // only iterate over spam space
+        // if there is a word only in ham, it's probability will default
+        // to zero regardless of whether it is in our bag
         Iterator<String> iter = spamBag.getBagIter();
         while (iter.hasNext()){
             curr = iter.next();
@@ -84,19 +92,6 @@ public class Filter {
             probMap.put(curr,
                     (spPr / (spPr + hamProb(curr)))
             );
-            spPr = 0;
-        }
-        iter = hamBag.getBagIter();
-        while (iter.hasNext()){
-            curr = iter.next();
-            if (!spamBag.hasWord(curr)){
-                spPr = spamProb(curr);
-                probMap.put(curr,
-                        (spPr / (spPr + hamProb(curr)))
-                );
-            }
-            spPr = 0;
-
         }
         probChange = false;
     }
@@ -105,7 +100,6 @@ public class Filter {
         // if it doesn't need to be done, genSpamProb will return immediately
         genSpamProb();
         Double p = probMap.get(word);
-//        System.out.println(probMap.get("viagra"));
         if (p != null) return (p);
         else return 0.0;
     }
@@ -126,8 +120,17 @@ public class Filter {
     private double eehta(String word){
         // use an identity to simplify the computation of eehta
         // log(x) - log(y) = log(x / y)
+        // normalize the values 1 and 0 to something that is not undefined
+        // when log is taken
         double spPr = probSpam(word);
-        return (Math.log( (1 - spPr) / (spPr) ));
+        Double result;
+        if (spPr >= 1){
+            spPr = 0.99999999999999999;
+        } else if (spPr == 0){
+            spPr = 0.00000000000000001;
+        }
+        result = Math.log( (1 - spPr) / spPr );
+        return result;
     }
 
     public double test(File file, List<TestFile> fileList) {
@@ -145,7 +148,11 @@ public class Filter {
                 while (scan.hasNext()) {
                     String word = scan.next().toLowerCase();
                     if (isWord(word)) {
+//                        System.out.println("----------------------");
+//                        System.out.println(eehta);
                         eehta += eehta(word);
+//                        System.out.println(eehta);
+//                        System.out.println("----------------------");
                     }
                 }
                 // calculate probability that file is spam
@@ -157,7 +164,7 @@ public class Filter {
                     parentName = "Spam";
                 } else {
                     parentName = "void";
-                    System.out.println("Error occured, directory improperly set");
+                    System.err.println("Error occured, directory improperly set");
                 }
                 fileList.add(new TestFile(file.getName(), prSF, parentName));
                 scan.close();

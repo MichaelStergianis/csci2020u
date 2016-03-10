@@ -32,12 +32,15 @@ public class WordBag {
     public Iterator<String> getBagIter(){
         return (map.keySet().iterator());
     }
+
     public boolean hasWord(String word){
         return map.containsKey(word);
     }
+
     public void incrementFiles() {
         numFiles += 1;
     }
+
     public double getNumFiles(){
         return numFiles;
     }

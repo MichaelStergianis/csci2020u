@@ -1,7 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/about.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/cut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/exit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/paste.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/save2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/images/save_as.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/about.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/cut.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/exit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/paste.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/save2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/out/production/JavaFX_Step1/images/save_as.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/demo_sockets/.gradle/2.11/taskArtifacts/cache.properties.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/demo_sockets/.gradle/2.8/taskArtifacts/cache.properties.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/FindAverage/FindAverage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/FindAverage/testdata.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/JavaFX_Demo1.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/src/DataSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/src/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Step1/src/Student.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/ant.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/artifacts/JavaFXApp.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/description.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/Network.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/src/sample/Controller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/src/sample/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/src/sample/TCPSample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/Network/src/sample/sample.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/demo_sockets/.gradle/2.11/taskArtifacts/cache.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/demo_sockets/.gradle/2.8/taskArtifacts/cache.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/demo_sockets/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/demo_sockets/src/main/java/socketDemo/WebServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../excercises/demo_sockets/www/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../excercises/socket_demo/src/main/java/socketDemo/.WebServer.java.swp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../irf/Main.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spam/Filter.java" afterPath="$PROJECT_DIR$/src/Spam/Filter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spam/Main.java" afterPath="$PROJECT_DIR$/src/Spam/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Spam/WordBag.java" afterPath="$PROJECT_DIR$/src/Spam/WordBag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../excercises/Demo_JavaFX_GFX/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../excercises/Demo_JavaFX_GFX/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../excercises/JavaFX_Canvas/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../excercises/JavaFX_Canvas/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../excercises/file_streams/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../excercises/file_streams/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../excercises/ui_demo_2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../excercises/ui_demo_2/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../labs/lab05/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../labs/lab05/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../labs/lab07/src/labSix/Main.java" afterPath="$PROJECT_DIR$/../../labs/lab07/src/labSix/Main.java" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,24 +132,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Spam/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5776699">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="e#4341#4342#0" expanded="true" />
-                <element signature="e#4369#4370#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Spam/Filter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="147" column="45" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.41450778">
+              <caret line="131" column="47" selection-start-line="131" selection-start-column="47" selection-end-line="131" selection-end-column="47" />
               <folding>
                 <element signature="method#genSpamProb#0;class#Filter#0" expanded="false" />
                 <element signature="method#probSpam#0;class#Filter#0" expanded="false" />
@@ -102,8 +170,11 @@
         <entry file="file://$PROJECT_DIR$/src/Spam/WordBag.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-              <folding />
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding>
+                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#876#877#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,8 +209,8 @@
         <option value="$PROJECT_DIR$/src/sample/WordBag.java" />
         <option value="$PROJECT_DIR$/src/Spam/WordBag.java" />
         <option value="$PROJECT_DIR$/src/Spam/TestFile.java" />
-        <option value="$PROJECT_DIR$/src/Spam/Filter.java" />
         <option value="$PROJECT_DIR$/src/Spam/Main.java" />
+        <option value="$PROJECT_DIR$/src/Spam/Filter.java" />
       </list>
     </option>
   </component>
@@ -150,8 +221,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="y" value="26" />
     <option name="width" value="960" />
-    <option name="height" value="1080" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -183,9 +255,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,6 +343,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -604,15 +676,16 @@
       <workItem from="1457379991765" duration="1996000" />
       <workItem from="1457382009319" duration="2594000" />
       <workItem from="1457456006955" duration="5560000" />
+      <workItem from="1457642496547" duration="1522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19887000" />
+    <option name="totallyTimeSpent" value="21409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1080" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="26" width="960" height="1054" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -621,10 +694,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3340206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23411018" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23348017" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -636,7 +710,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -668,17 +741,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Spam/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="19" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
+          <caret line="147" column="45" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
           <folding>
             <element signature="method#genSpamProb#0;class#Filter#0" expanded="false" />
             <element signature="method#probSpam#0;class#Filter#0" expanded="false" />
@@ -698,8 +768,11 @@
     <entry file="file://$PROJECT_DIR$/src/Spam/WordBag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding />
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -707,10 +780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +808,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,10 +819,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +847,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spam/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spam/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="19" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
+          <folding>
+            <element signature="method#genSpamProb#0;class#Filter#0" expanded="false" />
+            <element signature="method#probSpam#0;class#Filter#0" expanded="false" />
+            <element signature="method#isWord#0;class#Filter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spam/TestFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spam/WordBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -785,10 +897,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +905,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -823,10 +935,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +943,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -861,10 +973,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -872,7 +981,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -898,10 +1010,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -909,7 +1018,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,10 +1047,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -978,11 +1087,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spam/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Spam/WordBag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding />
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -996,23 +1116,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Spam/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="147" column="45" selection-start-line="147" selection-start-column="45" selection-end-line="147" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.41450778">
+          <caret line="131" column="47" selection-start-line="131" selection-start-column="47" selection-end-line="131" selection-end-column="47" />
           <folding>
             <element signature="method#genSpamProb#0;class#Filter#0" expanded="false" />
             <element signature="method#probSpam#0;class#Filter#0" expanded="false" />
             <element signature="method#isWord#0;class#Filter#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Spam/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5776699">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4369#4370#0" expanded="true" />
           </folding>
         </state>
       </provider>
