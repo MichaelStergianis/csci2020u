@@ -1,3 +1,11 @@
+Authors:
+Irfaan Ali
+Sam McCabe
+Michael Stergianis
+
+Github:
+https://github.com/MichaelStergianis/csci2020u.git
+
 In order to run this program please do the following.
 
 1. Download the source from github: 
