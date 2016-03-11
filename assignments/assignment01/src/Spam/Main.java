@@ -7,10 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -19,6 +16,7 @@ import javafx.stage.Stage;
 import javax.activation.DataSource;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main extends Application {
     private BorderPane layout;
@@ -26,6 +24,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        /*
+        UI u = new UI();
+        u.start(primaryStage);
+        */
         // Directory Picker to let user navigate to data folder
         DirectoryChooser directoryChooser = new DirectoryChooser();
         directoryChooser.setTitle("Select Data Directory");
@@ -83,8 +85,10 @@ public class Main extends Application {
 
         // FIX VARIABLES x and y
         // convert probability into string and then replace x and y respectively
-        String accuracy = "Accuracy Variable";
-        String precision = "Precision Variable";
+
+        // Populate accuracy and precision fields
+        String accuracy = Double.toString( (getAccuracyHam(fileList) + getAccuracySpam(fileList)) / 2);
+        String precision = Double.toString( ( (getPrecision(fileList, "ham") + getPrecision(fileList, "spam")) / 2) );
 
 
         // Area to show accuracy and probability below table
@@ -111,6 +115,61 @@ public class Main extends Application {
         primaryStage.setTitle("Spam Master 3000");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+    }
+
+    private double getPrecision(List<TestFile> fileList, String type){
+        // unfortunately this is going to be O(n^2)
+        double precision = 0;
+        int comparisons = 0;
+        for (int i = 0; i < fileList.size(); i++){
+            for (int j = i + 1; j < fileList.size(); j++){
+                if (fileList.get(i).getActualClass().equalsIgnoreCase(type) && fileList.get(j).getActualClass().equalsIgnoreCase(type)) {
+                    precision += Math.abs(
+                            fileList.get(i).getSpamProbability()
+                                    - fileList.get(j).getSpamProbability()
+                    );
+                    comparisons++;
+                }
+            }
+        }
+        // divide precision by the number of comparisons
+        if (comparisons > 0) {
+            return (1 - (precision / comparisons));
+        } else {
+            return 0;
+        }
+    }
+
+    private double getAccuracyHam(List<TestFile> fileList){
+        double accuracy = 0;
+        int comparisons = 0;
+        for (int i = 0; i < fileList.size(); i++){
+            if (fileList.get(i).getActualClass().equalsIgnoreCase("ham")){
+                accuracy += 1 - fileList.get(i).getSpamProbability();
+                comparisons++;
+            }
+        }
+        if (comparisons > 0){
+            return (accuracy /= comparisons);
+        } else {
+            return 0;
+        }
+    }
+    private double getAccuracySpam(List<TestFile> fileList){
+        double accuracy = 0;
+        int comparisons = 0;
+        for (int i = 0; i < fileList.size(); i++){
+            if (fileList.get(i).getActualClass().equalsIgnoreCase("spam")){
+                accuracy += (fileList.get(i).getSpamProbability());
+                comparisons++;
+            }
+        }
+        if (comparisons > 0){
+            return (accuracy /= comparisons);
+        } else {
+            return 0;
+        }
     }
 
     public static void main(String[] args) {
