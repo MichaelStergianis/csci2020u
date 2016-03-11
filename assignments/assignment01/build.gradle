@@ -1,0 +1,6 @@
+apply plugin: 'java'
+
+task(run, dependsOn: 'classes',  type: JavaExec) {
+	main = 'main.java.SpamFilter.Main'
+	classpath = sourceSets.main.runtimeClasspath
+}

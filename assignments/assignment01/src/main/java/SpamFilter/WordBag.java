@@ -1,4 +1,4 @@
-package Spam;
+package main.java.SpamFilter;
 
 import java.util.Iterator;
 import java.util.Map;

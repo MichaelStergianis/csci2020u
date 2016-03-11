@@ -1,4 +1,4 @@
-package Spam;
+package main.java.SpamFilter;
 
 import java.io.File;
 import java.io.IOException;
