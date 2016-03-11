@@ -66,7 +66,7 @@ public class Main extends Application {
             // strokeRect for outline fillRect for fill
             gc.strokeRect(100, heightOffset, 100, 50);
             gc.fillRect(100, heightOffset, 100, 50);
-            
+
             // add each arc, all centered at same place,
             // each starting at the old angle + old currLen
             gc.fillArc(400, 50, 300, 300, startAng, currLen, ArcType.ROUND);
