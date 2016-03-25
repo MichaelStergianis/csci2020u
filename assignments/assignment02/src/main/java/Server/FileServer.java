@@ -40,8 +40,13 @@ public class FileServer {
 
     public void handleRequests(){
         try {
-            Socket clientSocket = serverSocket.accept();
-
+            while (true) {
+                Socket clientSocket = serverSocket.accept();
+                Thread clientThread = new Thread(
+                        new ClientConnectionHandler(clientSocket, sharedFile
+                        ));
+                clientThread.start();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
