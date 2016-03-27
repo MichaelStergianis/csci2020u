@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+task(runHTTPServer, dependsOn: 'classes', type: JavaExec) {
+    main = 'socketDemo.WebServer'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task(runHTTPBrowser, dependsOn: 'classes', type: JavaExec) {
+    main = 'socketDemo.WebBrowser'
+    classpath = sourceSets.main.runtimeClasspath
+}
