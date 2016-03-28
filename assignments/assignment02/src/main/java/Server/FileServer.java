@@ -14,7 +14,7 @@ public class FileServer {
 
     public FileServer(){
         try {
-            serverSocket = new ServerSocket(8080);
+            serverSocket = new ServerSocket(8020);
             this.sharedFile = new File(".");
         } catch (IOException e){
             e.printStackTrace();

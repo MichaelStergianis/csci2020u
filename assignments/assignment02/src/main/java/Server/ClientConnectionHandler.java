@@ -20,9 +20,11 @@ public class ClientConnectionHandler implements Runnable{
                     new InputStreamReader(clientSocket.getInputStream())
             );
             String line = in.readLine();
-            System.out.println(line);
+            System.out.println(line + " request from "  + clientSocket.getInetAddress());
             String[] request = line.split(" ");
-            if (request[0].equals("DIR")) {
+            if (request == null){
+                returnError();
+            } else if (request[0].equals("DIR")) {
                 sendDir();
             } else if (request[0].equals("UPLOAD")) {
                 recieve(request[1], in);
@@ -44,6 +46,7 @@ public class ClientConnectionHandler implements Runnable{
             for (String file: dirs) {
                 out.print(file + ",");
             }
+            out.println();
             out.flush();
             out.close();
         } catch (IOException e){

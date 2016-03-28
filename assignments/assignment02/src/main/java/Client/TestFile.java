@@ -1,4 +1,4 @@
-package sample;
+package Client;
 
 /**
  * Created by Irfaan on 28/03/2016.

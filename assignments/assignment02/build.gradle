@@ -16,3 +16,8 @@ task(runServer, dependsOn: 'classes', type: JavaExec) {
 	main = 'Server.Main'
 	classpath = sourceSets.main.runtimeClasspath
 }
+
+task(runClient, dependsOn: 'classes', type: JavaExec) {
+	main = 'Client.Main'
+	classpath = sourceSets.main.runtimeClasspath
+}
