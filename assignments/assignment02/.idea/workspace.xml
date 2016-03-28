@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bccf5921-60b1-4543-886d-912a4d2f014b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../excercises/sample_sockets/src/main/java/socketDemo/.ClientHandler.java.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Server/ClientConnectionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/Server/ClientConnectionHandler.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UITest/src/sample/Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UITest/src/sample/Datasource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UITest/src/sample/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UITest/src/sample/TestFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../UITest/src/sample/sample.fxml" afterPath="" />
     </list>
     <ignored path="assignment_02.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -997,12 +1000,12 @@
       <workItem from="1458585563376" duration="5065000" />
       <workItem from="1458762259344" duration="2364000" />
       <workItem from="1458922442296" duration="3315000" />
-      <workItem from="1459092520276" duration="1251000" />
+      <workItem from="1459092520276" duration="1850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11995000" />
+    <option name="totallyTimeSpent" value="12594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="960" height="1054" extended-state="4" />
