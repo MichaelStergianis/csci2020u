@@ -61,15 +61,25 @@ public class ClientConnectionHandler implements Runnable{
             out.flush();
             out.close();
             in.close();
-        } catch (FileNotFoundException e){
-            e.printStackTrace();
         } catch (IOException e){
             e.printStackTrace();
         }
-
     }
-    private void send(String fileName){
 
+    private void send(String fileName){
+        try {
+            PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
+            BufferedReader in = new BufferedReader(new FileReader(new File(fileName)));
+            String line;
+            while ( (line = in.readLine()) != null){
+                out.print(line);
+            }
+            out.flush();
+            out.close();
+            in.close();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
     }
     private void returnError(){
 
