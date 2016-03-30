@@ -7,7 +7,11 @@ import java.io.File;
  */
 public class Main {
     public static void main (String[] args){
-        FileServer fs = new FileServer(8020, new File("."));
+        File sharedFile = new File(args[0]);
+        if (!sharedFile.exists() || !sharedFile.isDirectory()){
+            System.exit(1);
+        }
+        FileServer fs = new FileServer(8020, new File(args[0]));
         fs.handleRequests();
     }
 }

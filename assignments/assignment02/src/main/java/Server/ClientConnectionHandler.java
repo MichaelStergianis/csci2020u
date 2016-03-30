@@ -8,11 +8,11 @@ import java.net.Socket;
  */
 public class ClientConnectionHandler implements Runnable{
     private Socket clientSocket;
-    private File sharedFile;
+    private File sharedFolder;
 
-    public ClientConnectionHandler(Socket clientSocket, File sharedFile){
+    public ClientConnectionHandler(Socket clientSocket, File sharedFolder){
         this.clientSocket = clientSocket;
-        this.sharedFile = sharedFile;
+        this.sharedFolder = sharedFolder;
     }
     public void run(){
         try {
@@ -27,7 +27,7 @@ public class ClientConnectionHandler implements Runnable{
             } else if (request[0].equals("DIR")) {
                 sendDir();
             } else if (request[0].equals("UPLOAD")) {
-                recieve(request[1], in);
+                receive(request[1]);
             } else if (request[0].equals("DOWNLOAD")) {
                 send(request[1]);
             } else {
@@ -39,7 +39,7 @@ public class ClientConnectionHandler implements Runnable{
         }
     }
     private void sendDir(){
-        String[] dirs = sharedFile.list();
+        String[] dirs = sharedFolder.list();
         try {
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
             // The server will send a list of file names separated by commas
@@ -54,36 +54,89 @@ public class ClientConnectionHandler implements Runnable{
         }
 
     }
-    private void recieve(String fileName, BufferedReader in){
+
+    synchronized private void receive(String fileName){
         try {
-            PrintWriter out = new PrintWriter(new FileOutputStream(new File(sharedFile, fileName)));
-            String line;
-            while ( (line = in.readLine()) != null){
-               out.print(line);
+            InputStream in = clientSocket.getInputStream();
+            File file = new File(sharedFolder, fileCollision(fileName, 0));
+            file.createNewFile();
+            FileOutputStream fout = new FileOutputStream(file);
+            int inByte = in.read();
+            while (inByte != -1){
+                fout.write(inByte);
+                inByte = in.read();
             }
-            out.flush();
-            out.close();
+            fout.flush();
+            fout.close();
             in.close();
         } catch (IOException e){
             e.printStackTrace();
         }
     }
 
-    private void send(String fileName){
+    synchronized private void send(String fileName){
         try {
-            PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
-            BufferedReader in = new BufferedReader(new FileReader(new File(fileName)));
-            String line;
-            while ( (line = in.readLine()) != null){
-                out.print(line);
+            File file = new File(sharedFolder, fileName);
+            if (file.isDirectory()){
+                System.out.println("Request for directory " + fileName + " denied");
+                return;
             }
-            out.flush();
-            out.close();
-            in.close();
+            FileInputStream fin = new FileInputStream(file);
+            OutputStream outStream = clientSocket.getOutputStream();
+            int inByte = fin.read();
+            while (inByte != -1){
+                outStream.write(inByte);
+                inByte = fin.read();
+            }
+            outStream.flush();
+            fin.close();
+            outStream.close();
         } catch (IOException e){
-            e.printStackTrace();
+
         }
     }
+    public String fileCollision(String fileName, int i){
+        File file;
+        if (i > 0){
+            file = new File(sharedFolder, fileName + " (" + i + ")");
+        } else {
+            file = new File(sharedFolder, fileName);
+        }
+        if (!file.exists()){
+            return file.getName();
+        } else {
+            return fileCollision(fileName, ++i);
+        }
+    }
+    //    private void receive(String fileName, BufferedReader in){
+//        try {
+//            PrintWriter out = new PrintWriter(new FileOutputStream(new File(sharedFolder, fileName)));
+//            String line;
+//            while ( (line = in.readLine()) != null){
+//               out.print(line);
+//            }
+//            out.flush();
+//            out.close();
+//            in.close();
+//        } catch (IOException e){
+//            e.printStackTrace();
+//        }
+//    }
+    //    private void send(String fileName){
+//        try {
+//            PrintWriter out = new PrintWriter(clientSocket.getOutputStream());
+//            BufferedReader in = new BufferedReader(new FileReader(new File(fileName)));
+//            String line;
+//            while ( (line = in.readLine()) != null){
+//                out.print(line);
+//            }
+//            out.flush();
+//            out.close();
+//            in.close();
+//        } catch (IOException e){
+//            e.printStackTrace();
+//        }
+//    }
     private void returnError(){
 
     }

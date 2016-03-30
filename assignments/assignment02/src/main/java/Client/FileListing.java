@@ -3,10 +3,10 @@ package Client;
 /**
  * Created by Irfaan on 28/03/2016.
  */
-public class TestFile {
+public class FileListing {
     private String fileName;
 
-    public TestFile(String fName) {
+    public FileListing(String fName) {
         this.fileName = fName;
     }
 
